@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MÓDULO 4: PRESIDENTE (Crear una comunidad) -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg_app"
+    tools:context=".CrearComunidadActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="24dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="24dp">
+
+            <include
+            layout="@layout/include_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/SbTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/sb_crear_comunidad_titulo" />
+
+            <TextView
+                style="@style/SbSubtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/sb_crear_comunidad_sub" />
+
+            <!-- Nombre de la comunidad -->
+            <LinearLayout
+                style="@style/SbInputBox"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="24dp">
+
+                <ImageView
+                    style="@style/SbInputIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_home" />
+
+                <EditText
+                    android:id="@+id/etNombreComunidad"
+                    style="@style/SbEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/sb_hint_nombre_comunidad"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapWords"
+                    android:maxLength="60" />
+            </LinearLayout>
+
+            <!-- Descripción (opcional, máx. 100) -->
+            <LinearLayout
+                style="@style/SbInputBox"
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:layout_marginTop="12dp"
+                android:gravity="top"
+                android:paddingTop="14dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    style="@style/SbInputIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_note" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etDescripcionComunidad"
+                        style="@style/SbEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:hint="@string/sb_hint_descripcion"
+                        android:importantForAutofill="no"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:maxLength="100" />
+
+                    <TextView
+                        android:id="@+id/tvContador"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:text="@string/sb_contador_inicial"
+                        android:textColor="@color/sb_texto_hint"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Ubicación de referencia -->
+            <LinearLayout
+                style="@style/SbInputBox"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp">
+
+                <ImageView
+                    style="@style/SbInputIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_location" />
+
+                <EditText
+                    android:id="@+id/etUbicacionComunidad"
+                    style="@style/SbEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/sb_hint_ubicacion"
+                    android:importantForAutofill="no"
+                    android:inputType="textPostalAddress" />
+
+                <ImageView
+                    android:id="@+id/ivUbicacionActual"
+                    style="@style/SbInputIcon"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:contentDescription="@string/sb_usar_ubicacion_actual"
+                    android:src="@drawable/ic_my_location" />
+            </LinearLayout>
+
+            <!-- Aviso -->
+            <LinearLayout
+                style="@style/SbInfoBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_info"
+                    android:tint="@color/sb_azul" />
+
+                <TextView
+                    style="@style/SbInfoTexto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:text="@string/sb_info_comunidad"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:importantForAccessibility="no"
+                android:src="@drawable/sb_ilustracion_casa" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCrearComunidad"
+                style="@style/SbBtnPrimario"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@drawable/ic_home"
+                android:text="@string/sb_btn_crear_comunidad" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvVolverPresidente"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|start"
+        android:layout_margin="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/sb_volver_desc"
+        android:drawableStart="@drawable/ic_arrow_back"
+        android:drawableTint="@color/sb_azul"
+        android:gravity="center"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
+</FrameLayout>

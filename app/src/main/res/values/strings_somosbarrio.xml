@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Generales -->
+    <string name="sb_app_nombre">SomosBarrio</string>
+    <string name="sb_eslogan">Tu voz, nuestro barrio</string>
+    <string name="sb_logo_desc">Logo de SomosBarrio</string>
+    <string name="sb_volver_desc">Volver</string>
+    <string name="sb_hint_celular">Número de celular</string>
+    <string name="sb_hint_password">Contraseña</string>
+    <string name="sb_o">o</string>
+    <string name="sb_mostrar_password">Mostrar u ocultar contraseña</string>
+
+    <!-- Login -->
+    <string name="sb_bienvenido">¡Bienvenido!</string>
+    <string name="sb_login_subtitulo">Inicia sesión para seguir conectado con tu comunidad vecinal.</string>
+    <string name="sb_iniciar_sesion">Iniciar sesión</string>
+    <string name="sb_crear_una_cuenta">Crear una cuenta</string>
+
+    <!-- Registro de vecino -->
+    <string name="sb_crear_cuenta">Crear cuenta</string>
+    <string name="sb_registro_subtitulo">Únete a <b>SomosBarrio</b> y sé parte de una comunidad más segura y unida.</string>
+    <string name="sb_hint_nombres">Nombres</string>
+    <string name="sb_hint_apellidos">Apellidos</string>
+    <string name="sb_info_ubicacion">La <b>ubicación</b> se solicitará cuando quieras unirte a una comunidad, para validar que perteneces al barrio.</string>
+    <string name="sb_ya_tienes_cuenta">¿Ya tienes una cuenta? <b>Iniciar sesión</b></string>
+
+    <!-- Acceso -->
+    <string name="sb_que_deseas">¿Qué deseas hacer?</string>
+    <string name="sb_acceso_subtitulo">Elige una opción para continuar en la aplicación.</string>
+    <string name="sb_crear_comunidad_titulo">Crear una comunidad</string>
+    <string name="sb_crear_comunidad_desc">Registra tu barrio, gestiona a tus vecinos y genera un código de invitación.</string>
+    <string name="sb_unirme_titulo">Unirme a una comunidad</string>
+    <string name="sb_unirme_desc">Ingresa el código que te compartió tu presidente vecinal y solicita tu ingreso.</string>
+
+    <!-- Presidente: crear comunidad -->
+    <string name="sb_crear_comunidad_sub">Registra tu barrio y conviértete en el presidente vecinal.</string>
+    <string name="sb_hint_nombre_comunidad">Nombre de la comunidad</string>
+    <string name="sb_hint_descripcion">Descripción (opcional)</string>
+    <string name="sb_contador_inicial">0/100</string>
+    <string name="sb_hint_ubicacion">Ubicación de referencia</string>
+    <string name="sb_usar_ubicacion_actual">Usar mi ubicación actual</string>
+    <string name="sb_info_comunidad">Esta información ayudará a que tus vecinos identifiquen tu comunidad.</string>
+    <string name="sb_btn_crear_comunidad">Crear comunidad</string>
+
+    <!-- Comunidad creada -->
+    <string name="sb_comunidad_creada">¡Comunidad creada!</string>
+    <string name="sb_ahora_presidente">Ahora eres el presidente vecinal de:</string>
+    <string name="sb_tu_codigo">Tu código de invitación</string>
+    <string name="sb_codigo_subtitulo">Compártelo con tus vecinos para que soliciten unirse a la comunidad.</string>
+    <string name="sb_copiar">Copiar</string>
+    <string name="sb_info_codigo">Con este código, tus vecinos podrán enviar una solicitud de ingreso a la comunidad.</string>
+    <string name="sb_ir_mi_comunidad">Ir a mi comunidad</string>
+
+    <!-- Unirse a una comunidad -->
+    <string name="sb_unirse_subtitulo">Ingresa el código que te compartió el presidente de tu barrio.</string>
+    <string name="sb_hint_codigo">Código de invitación</string>
+    <string name="sb_permiso_ubicacion_titulo">Permiso de ubicación</string>
+    <string name="sb_permiso_ubicacion_desc">Te pediremos acceso a tu ubicación para verificar que perteneces al barrio.</string>
+    <string name="sb_solicitar_ingreso">Solicitar ingreso</string>
+    <string name="sb_volver">Volver</string>
+</resources>

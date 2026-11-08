@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Logo de SomosBarrio (icono SVG + nombre + eslogan). Se reutiliza en TODAS las vistas
+     con <include layout="@layout/include_logo" /> para que el logo sea siempre el mismo. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/sb_logo_desc"
+        android:src="@drawable/logo_somosbarrio" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/sb_app_nombre"
+        android:textColor="@color/sb_azul_oscuro"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sb_eslogan"
+        android:textColor="@color/sb_texto"
+        android:textSize="13sp" />
+</LinearLayout>

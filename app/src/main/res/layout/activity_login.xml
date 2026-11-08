@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MÓDULO 1: LOGIN (Ventana principal) -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bg_app"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/ivFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:adjustViewBounds="true"
+        android:importantForAccessibility="no"
+        android:scaleType="fitEnd"
+        android:src="@drawable/sb_ilustracion_barrio" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingTop="32dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="150dp">
+
+            <include
+            layout="@layout/include_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/sb_bienvenido"
+                style="@style/SbTitulo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/sb_login_subtitulo"
+                style="@style/SbSubtitulo" />
+
+            <!-- Celular -->
+            <LinearLayout
+                style="@style/SbInputBox"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="28dp">
+
+                <ImageView
+                    style="@style/SbInputIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_phone" />
+
+                <EditText
+                    android:id="@+id/etTelefonoLogin"
+                    style="@style/SbEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/sb_hint_celular"
+                    android:importantForAutofill="no"
+                    android:inputType="phone"
+                    android:maxLength="9" />
+            </LinearLayout>
+
+            <!-- Contraseña -->
+            <LinearLayout
+                style="@style/SbInputBox"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp">
+
+                <ImageView
+                    style="@style/SbInputIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/ic_lock" />
+
+                <EditText
+                    android:id="@+id/etPasswordLogin"
+                    style="@style/SbEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="@string/sb_hint_password"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword" />
+
+                <ImageView
+                    android:id="@+id/ivTogglePassword"
+                    style="@style/SbInputIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/sb_mostrar_password"
+                    android:src="@drawable/ic_visibility" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnIniciarSesion"
+                style="@style/SbBtnPrimario"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="28dp"
+                android:drawableStart="@drawable/ic_login"
+                android:text="@string/sb_iniciar_sesion" />
+
+            <include layout="@layout/include_divisor_o" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnIrRegistro"
+                style="@style/SbBtnContorno"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@drawable/ic_person_add"
+                android:text="@string/sb_crear_una_cuenta" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

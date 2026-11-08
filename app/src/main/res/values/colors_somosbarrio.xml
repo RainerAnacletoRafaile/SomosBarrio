@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sb_azul_oscuro">#0B3C8C</color>
+    <color name="sb_azul">#1565D8</color>
+    <color name="sb_azul_claro">#E8F1FD</color>
+    <color name="sb_azul_borde">#BFD4F2</color>
+    <color name="sb_degradado_inicio">#1E8EF5</color>
+    <color name="sb_degradado_fin">#0B5BC4</color>
+    <color name="sb_verde">#2E9E4F</color>
+    <color name="sb_verde_claro">#EAF7EE</color>
+    <color name="sb_naranja">#F59E0B</color>
+    <color name="sb_texto">#374151</color>
+    <color name="sb_texto_hint">#6B7280</color>
+    <color name="sb_borde">#CBD5E1</color>
+    <color name="sb_fondo_inicio">#FFFFFF</color>
+    <color name="sb_fondo_fin">#EEF5FF</color>
+    <color name="sb_blanco">#FFFFFF</color>
+</resources>
