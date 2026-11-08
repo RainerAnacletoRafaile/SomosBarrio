@@ -6,7 +6,8 @@ public class LoginActivity extends BaseActivity {
   findViewById(R.id.btnIniciarSesion).setOnClickListener(v->{
    if(!requerido(telefono,"Celular")||!requerido(clave,"Contraseña"))return;
    if(telefono.getText().toString().trim().length()!=9){telefono.setError("Ingresa un celular de 9 dígitos");return;}
-   mensaje("Formulario validado. La autenticación se conectará cuando el equipo publique el endpoint.");
+   mensaje("Modo demostración: ingresando al menú principal.");
+   abrir(AccesoActivity.class);
   });
   findViewById(R.id.btnIrRegistro).setOnClickListener(v->abrir(RegistroActivity.class));
  }
